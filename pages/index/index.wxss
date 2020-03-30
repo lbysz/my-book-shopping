@@ -1,0 +1,77 @@
+/**index.wxss**/
+swiper {
+  height: 750rpx;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+swiper-item {
+  height: 100%;
+  width: 100%;
+}
+.slide-image{
+   height: 100%;
+  width: 100%;
+}
+.recommend{
+  position: absolute;
+  top: 820rpx;
+  left: 250rpx;
+  display: flex;
+}
+.title{
+  height: 100rpx; 
+  width: 100%;
+  display:flex;
+  background-color: #d81e06;
+  justify-content: center;
+  line-height: 100rpx;
+  color:white;
+}
+.content{
+  display:block;
+}
+/*推荐模块*/
+.goods-list{
+  margin-top:800rpx; 
+}
+.goods-title image {
+	width: 36rpx;
+	height: 36rpx;
+	margin-bottom: -6rpx;
+	margin-left: 10rpx;
+}
+.goods-list-title {
+	font-size: 30rpx;
+	color: #333;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.goods-list-text {
+	font-size: 24rpx;
+	color: #999;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.goods-list-money {
+	font-size: 30rpx;
+	color: #ab2b2b;
+}
+.list-item {
+	width: 330rpx;
+	height: 480rpx;
+	overflow: hidden;
+	margin-bottom: 20rpx;
+  float: left;
+  margin-left: 35rpx;
+  padding-top:5rpx;
+}
+.list-item image {
+	width: 100%;
+	height: 330rpx;
+	border-radius: 6rpx;
+}
+/*推荐模块结束*/

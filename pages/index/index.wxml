@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<!--轮播图-->
+<swiper class='screen-swiper' indicator-dots='true' autoplay='true' interval='2000' indicator-active-color="#ccc">
+  <block wx:for="{{banners}}" wx:key="id" data-url="{{item.linkUrl}}">
+    <swiper-item><image src="{{item.picUrl}}" mode="aspectFill" class="slide-image" bindtap="tapBanner" data-id="{{item.businessId}}"></image></swiper-item>
+  </block>
+</swiper>
+<!--人气推荐-->
+<view class="goods-list flex justify-between padding-top padding-lr flex-wrap" >
+  <view class="title">----人气推荐----</view>
+		<navigator url="/pages/detail/detail?id={{item.id}}" class="list-item" wx:for="{{goods}}" wx:key="id">
+			<image src="{{item.pic}}" mode="aspectFill"></image>
+			<view class="goods-list-title">{{item.name}}</view>
+			<view class="goods-list-money">Ұ{{item.minPrice}}</view>
+		</navigator>
+</view>
